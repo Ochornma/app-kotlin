@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@id/homeFragment">
+
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="org.dclm.dclmappkotlin.ui.home.HomeFragment"
+        android:label="@string/menu_home"
+        tools:layout="@layout/home_fragment" >
+        <action
+            android:id="@+id/action_homeFragment_to_radioFragment"
+            app:destination="@id/radioFragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_giveFragment"
+            app:destination="@id/giveFragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_jotterFragment"
+            app:destination="@id/jotterFragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_watchFragment"
+            app:destination="@id/watchFragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_experienceFragment"
+            app:destination="@id/experienceFragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_doctrineFragment"
+            app:destination="@id/doctrineFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/blogFragment"
+        android:name="org.dclm.dclmappkotlin.ui.blog.BlogFragment"
+        android:label="@string/blog"
+        tools:layout="@layout/blog_fragment" />
+    <fragment
+        android:id="@+id/connectFragment"
+        android:name="org.dclm.dclmappkotlin.ui.connect.ConnectFragment"
+        android:label="@string/connect"
+        tools:layout="@layout/connect_fragment" />
+    <fragment
+        android:id="@+id/doctrineFragment"
+        android:name="org.dclm.dclmappkotlin.ui.doctrine.DoctrineFragment"
+        android:label="@string/doctrine"
+        tools:layout="@layout/doctrine_fragment" />
+    <fragment
+        android:id="@+id/experienceFragment"
+        android:name="org.dclm.dclmappkotlin.ui.experience.ExperienceFragment"
+        android:label="@string/experience"
+        tools:layout="@layout/experience_fragment" />
+    <fragment
+        android:id="@+id/giveFragment"
+        android:name="org.dclm.dclmappkotlin.ui.give.GiveFragment"
+        android:label="@string/give"
+        tools:layout="@layout/give_fragment" />
+    <fragment
+        android:id="@+id/jotterFragment"
+        android:name="org.dclm.dclmappkotlin.ui.jotter.JotterFragment"
+        android:label="@string/jotter"
+        tools:layout="@layout/jotter_fragment" />
+    <fragment
+        android:id="@+id/radioFragment"
+        android:name="org.dclm.dclmappkotlin.ui.listen.ListenFragment"
+        android:label="@string/listen"
+        tools:layout="@layout/listen_fragment" />
+    <fragment
+        android:id="@+id/notificationFragment"
+        android:name="org.dclm.dclmappkotlin.ui.notification.NotificationFragment"
+        android:label="@string/notification"
+        tools:layout="@layout/notification_fragment" />
+    <fragment
+        android:id="@+id/podcastFragment"
+        android:name="org.dclm.dclmappkotlin.ui.ondemand.audio.PodcastFragment"
+        android:label="@string/onDemand"
+        tools:layout="@layout/podcast_fragment" />
+    <fragment
+        android:id="@+id/subscribeFragment"
+        android:name="org.dclm.dclmappkotlin.ui.subscribe.SubscribeFragment"
+        android:label="@string/menu_subscribe"
+        tools:layout="@layout/subscribe_fragment" />
+    <fragment
+        android:id="@+id/videoDemandFragment"
+        android:name="org.dclm.dclmappkotlin.ui.ondemand.video.VideoDemandFragment"
+        android:label="@string/video"
+        tools:layout="@layout/video_demand_fragment" />
+    <fragment
+        android:id="@+id/watchFragment"
+        android:name="org.dclm.dclmappkotlin.ui.watch.WatchFragment"
+        android:label="@string/Watch"
+        tools:layout="@layout/watch_fragment" />
+    <fragment
+        android:id="@+id/searchFragment"
+        android:name="org.dclm.dclmappkotlin.ui.ondemand.search.SearchFragment"
+        android:label="@string/search"
+        tools:layout="@layout/search_fragment" />
+</navigation>
